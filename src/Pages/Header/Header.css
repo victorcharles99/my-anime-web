@@ -1,0 +1,76 @@
+header {
+    height: 10vh;
+    line-height: 10vh;
+    background-image: linear-gradient(to right bottom, rgba(199, 23, 235, 0.9),rgba(25, 211, 124, 0.9),rgba(85, 133, 187, 0.9),rgba(194, 224, 57, 0.5),rgba(243, 134, 10, 0.6),rgba(4, 227, 243, 0));
+    color: rgb(99, 8, 87);
+    position: relative;
+    z-index: 999;
+}
+
+h2 {
+    display: flex;
+  min-height: 2vh; 
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+  letter-spacing: 0.2em;
+  font-size: 1.85em;
+  text-transform: uppercase;
+  font-weight: 500;
+  justify-content: center;
+}
+
+header a {
+    color: #ffffffff;
+    margin-left: 30px;
+}
+
+header i {
+    quotes: 40px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin: 0 10px;
+}
+
+header button {
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.toggle {
+    display: none;
+}
+
+@media only screen and (max-width:768px) {
+    header nav .flexSB {
+        display: none;
+    }
+    .account {
+        display: none;
+    }
+    
+
+    .navMenu-list {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;left: 0;background-color: #e50;
+        width: 50%;
+        height: 100vh;
+        z-index: 999;
+    }header ul li {
+        margin-top: 30px;
+        padding: 0 50px;
+    }
+    .toggle {
+    display: block;
+    position: absolute;
+    top: 0;bottom: 0;right: 20px;margin: auto;
+    cursor: pointer;
+    background: none;
+    }
+}
+    
